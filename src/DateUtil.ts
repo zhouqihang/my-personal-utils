@@ -92,6 +92,11 @@ class DateUtil {
       return DateUtil.format(this.date, string);
   }
 
+  public getTime() {
+    if (!this.date) return 0;
+    return this.date.getTime();
+  }
+
 }
 
 export default DateUtil;
